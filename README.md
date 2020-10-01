@@ -15,6 +15,28 @@ Here's a [great checklist](https://github.com/ddbeck/readme-checklist/blob/main/
 
 setup.py is the build script for setuptools. It tells setuptools about your package (such as the name and version) as well as which code files to include. Your setup.py file is what describes your package, and tells setuptools how to package, build and install it.
 
+## Generate distribution packages
+Check your installation of `setuptools` and `wheel`:
+
+    pip install --user --upgrade setuptools wheel
+
+Then, run the command below in the same directory as `setup.py`:
+
+    python3 setup.py sdist bdist_wheel
+    
+This should output a lot of text, then will create two files in the `dist` directory. 
+
+## Upload your package
+
+Register an account on `Test PyPI`. Then create a PyPI API token [here](https://test.pypi.org/account/login/?next=%2Fmanage%2Faccount%2F#api-tokens). You can upload your package via Twine, and install Twine using this command:
+
+    pip install --user --upgrade twine
+    
+Then run Twine to upload.
+    
+    python3 -m twine upload --repository testpypi dist/*
+
+When prompted, enter your credentials. Your package should then be visible on Test PyPI!
 
 **Written for CSC630 in fall 2020 by Sarah, Gaia, Nikol, and Ali**
 
