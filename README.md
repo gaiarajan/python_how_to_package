@@ -35,19 +35,19 @@ Register an account on `PyPI` and verify your email. Then create a PyPI API toke
 Then run Twine to upload.
     
     python3 -m twine upload dist/*
-    
-## Installing your newly uploaded package
-
-To install your package and verify that it works user can use pip. Install your package from TestPyPI:
-
- -m pip install --index-url  --no-deps example-pkg-YOUR-USERNAME-HERE
-Make sure to specify your username in the package name!
-
-Pip will install the package. You can test that it was installed correctly by importing the package. Run the Python interpreter (make sure you’re still in your virtualenv).
-
-Note that the Import Package is example_pkg regardless of what name you gave your Distribution Package in setup.py (in this case, example-pkg-YOUR-USERNAME-HERE).
 
 When prompted, enter your credentials, using `__token__` as your username and your API token as the password. Your package should then be visible on PyPI!
+
+## Installing your newly uploaded package
+
+To install your package and verify that it works user can use pip. Install your package from PyPI:
+
+    -m pip install --index-url  --no-deps example-pkg-YOUR-USERNAME-HERE
+    
+Make sure to specify your username in the package name!
+
+pip will install the package. You can test that it was installed correctly by importing the package. 
+
 
 **Written for CSC630 in fall 2020 by Sarah, Gaia, Nikol, and Ali**
 
