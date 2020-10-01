@@ -31,11 +31,7 @@ Here's a [great checklist](https://github.com/ddbeck/readme-checklist/blob/main/
 ### Create a `tests/` directory
 This directory should hold any unit testing files.
 
-
-
 ## Generate a distribution package
-
-By now, your 
 
 Check your installation of `setuptools` and `wheel`:
 
