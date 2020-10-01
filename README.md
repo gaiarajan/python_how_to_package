@@ -28,15 +28,15 @@ This should output a lot of text, then will create two files in the `dist` direc
 
 ## Upload your package
 
-Register an account on `Test PyPI`. Then create a PyPI API token [here](https://test.pypi.org/account/login/?next=%2Fmanage%2Faccount%2F#api-tokens). You can upload your package via Twine, and install Twine using this command:
+Register an account on `PyPI` and verify your email. Then create a PyPI API token in your [account settings](https://pypi.org/manage/account/). Make sure to keep open the page with your token or save it somewhere because you'll need it later in this step! Then, you can upload your package via Twine, and install Twine using this command:
 
     pip install --user --upgrade twine
     
 Then run Twine to upload.
     
-    python3 -m twine upload --repository testpypi dist/*
+    python3 -m twine upload dist/*
 
-When prompted, enter your credentials. Your package should then be visible on Test PyPI!
+When prompted, enter your credentials, using `__token__` as your username and your API token as the password. Your package should then be visible on PyPI!
 
 **Written for CSC630 in fall 2020 by Sarah, Gaia, Nikol, and Ali**
 
