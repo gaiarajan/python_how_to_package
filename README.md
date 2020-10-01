@@ -34,7 +34,7 @@ Register an account on `PyPI` and verify your email. Then create a PyPI API toke
     
 Then run Twine to upload.
     
-    python3 -m twine upload dist/*
+    twine upload dist/*
 
 When prompted, enter your credentials, using `__token__` as your username and your API token as the password. Your package should then be visible on PyPI!
 
@@ -42,7 +42,7 @@ When prompted, enter your credentials, using `__token__` as your username and yo
 
 To install your package and verify that it works user can use pip. Install your package from PyPI:
 
-    -m pip install --index-url  --no-deps example-pkg-YOUR-USERNAME-HERE
+    pip install --index-url  --no-deps example-pkg-YOUR-USERNAME-HERE
     
 Make sure to specify your username in the package name!
 
