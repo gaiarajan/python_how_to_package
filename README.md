@@ -15,7 +15,7 @@ Here's a [great checklist](https://github.com/ddbeck/readme-checklist/blob/main/
 
 setup.py is the build script for setuptools. It tells setuptools about your package (such as the name and version) as well as which code files to include. Your setup.py file is what describes your package, and tells setuptools how to package, build and install it.
 
-## Generate distribution packages
+## Generate a distribution package
 Check your installation of `setuptools` and `wheel`:
 
     pip install --user --upgrade setuptools wheel
