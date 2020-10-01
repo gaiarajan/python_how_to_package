@@ -18,4 +18,4 @@ setup.py is the build script for setuptools. It tells setuptools about your pack
 
 **Written for CSC630 in fall 2020 by Sarah, Gaia, Nikol, and Ali**
 
-**Adapated from [python.org](https://packaging.python.org/tutorials/packaging-projects/)**
+**Adapted from [python.org](https://packaging.python.org/tutorials/packaging-projects/)**
