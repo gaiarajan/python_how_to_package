@@ -2,7 +2,7 @@
 
 PyPI is the Python package index. Repositories in PyPI can be installed using `pip`, the Python package manager. To post code to the PyPI repository, take the following steps:
 
-## Preparing your local files
+## Preparing local files
 After you complete this step, your working directory should look something like this:
 ```
 package_directory
