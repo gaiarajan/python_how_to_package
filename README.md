@@ -63,6 +63,7 @@ To install your package and verify that it works user can use pip. Install your 
     
 Make sure to specify your package name (which you specified in `setup.py`)! This command will install the package, and you can test that it was installed correctly by importing the package in your python code using `import your_package` (note that this should match the directory `your_package` in the file tree schematic at the top of this file). 
 
+(remote repository)
 
 *Written for CSC630 in fall 2020 by Sarah, Gaia, Nikol, and Ali*
 
