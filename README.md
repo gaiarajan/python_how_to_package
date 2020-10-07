@@ -30,6 +30,8 @@ Here's a [great checklist](https://github.com/ddbeck/readme-checklist/blob/main/
 
 ### Create a `tests/` directory
 This directory should hold any unit testing files.
+### Create an `__init__.py` file
+Initialize this file. The contents of this file will be executed when your package in imported. This file may be empty.
 
 ## Generate a distribution package
 
